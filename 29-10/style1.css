@@ -1,0 +1,63 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ccc url('bg.jpg') center/cover;
+    color: rgb(38, 42, 45);
+}
+/* CARD HEADER */
+.card {
+    float: left;
+    width: 20%;
+    min-width: 200px;
+    height: 350px;
+    margin: 50px 2.5%;
+    box-shadow: 5px 5px 5px #222;
+}
+.card-header {
+    text-align: center;
+    height: 300px;
+    background: rgb(247, 245, 236);
+    padding-top: 30px
+}
+.img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+}
+.img1 {
+    background: url('https://picsum.photos/id/2/200') center/cover;
+}
+.img2 {
+    background: url('https://picsum.photos/id/25/200') center/cover;
+}
+.img3 {
+    background: url('https://picsum.photos/id/53/200') center/cover;
+}
+.img4 {
+    background: url('https://picsum.photos/id/89/200') center/cover;
+}
+.card-header>h5 {
+    margin-top:90px;
+    margin-bottom:0px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.card-header>span {
+    font-size: 16px;
+}
+
+/* CARD FOOTER */
+.card-footer {
+    height: 30px;
+    background-color: rgb(19, 105, 206);
+}
+.card-footer>span {
+    display: inline-block;
+    width: 23%;
+    text-align: center;
+}
+.card-footer>span>i {
+    color: #ffF;
+    font-size: 14px;
+    line-height: 30px;
+}

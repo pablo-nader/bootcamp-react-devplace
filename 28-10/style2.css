@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+    background: rgb(223,232,255) url('body-bg.svg') no-repeat;
+    color: rgb(122,133,164);
+}
+strong {
+    color: #000;
+}
+.card {
+    border-radius: 15px;
+    width: 350px;
+    height: 550px;
+    margin: 20px auto;
+    box-shadow: 0px 10px 20px #999;
+    overflow: hidden;
+}
+.card-header {
+    color: #fff;
+    background: url('header-bg.svg') center/cover;
+    height: 180px;
+}
+.card-footer {
+    text-align: center;
+    height: 350px;
+    padding:10px 30px;
+    background: #fff
+}
+.card-footer>h3 {
+    color: #000;
+    font-size: 24px;
+    margin: 20px 0;
+}
+.card-footer>p {
+    padding:0 20px;
+    font-size: 14px;
+}
+.plan {
+    background: rgb(248,249,254);
+    border-radius: 10px;
+    height: 40px;
+    margin: 30px 0;
+    padding: 15px;
+}
+.plan-desc {
+    float:left;
+    margin-left: 20px;
+}
+.plan-desc>* {
+    text-align: left;
+    display:block;
+    margin-bottom: 5px;
+}
+.plan-change {
+    float: right;
+    line-height: 40px;
+}
+.plan-change>a {
+    font-size: 14px;
+    font-weight: bold;
+}
+.icon {
+    float:left;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    background: rgb(223,229,251);
+}
+.btn {
+    margin:20px auto;
+    height: 40px;
+    display: block;
+    width: 100%;
+    border:none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.btn-color {
+    background-color: rgb(56,42,225);
+    color: #fff;
+    box-shadow: 0 20px 20px #bbb;
+}
+.btn-light {
+    background-color: transparent;
+}

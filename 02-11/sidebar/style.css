@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(54, 54, 54);
+}
+.sidebar {
+    width: 60px;
+    height: 90vh;
+    margin: 20px;
+    padding: 10px 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 7px;
+}
+.sidebar > svg {
+    color: #555;
+    margin: 15px 0;
+}

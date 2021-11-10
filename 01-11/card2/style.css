@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    color: #fff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    background: #262626;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+.bg1 {
+    background: linear-gradient(-45deg, #ef06d1, #69abe5);
+}
+.bg2 {
+    background: linear-gradient(-45deg, #ffec61, #f321d7);
+}
+.bg3 {
+    background: linear-gradient(-45deg, #2af879, #9959f6);
+}
+.card {
+    width: 310px;
+    height: 490px;
+    margin: 0 15px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 50px 20px;
+}
+.icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 6px 0px #757575;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+.icon > i {
+    font-size: 50px;
+    line-height: 100px;
+}
+.desc {
+    font-size: 26px;
+}
+.price {
+    font-size: 60px;
+}
+.price > sup {
+    font-size: 50px;
+}
+li {
+    margin: 10px 0;
+}
+li > i {
+    font-size: 14px;
+}
+button {
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 25px;
+    box-shadow: 0px 4px 6px 0px #555;
+}
+.rotate {
+    transform: rotate(-45deg);
+}

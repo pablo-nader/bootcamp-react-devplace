@@ -1,0 +1,173 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+</head>
+<nav>
+    <div class="logo"></div>
+    <div class="left-menu">
+        <div class="dropdown menu">
+            <a href="#">Sell</a>
+            <div class="dropdown-content">
+                <a href="#">Sell everywhere</a>
+                <hr>
+                <a href="#">Online store</a>
+                <a href="#">International ecommerce</a>
+                <a href="#">Omnichannel commerce</a>
+                <a href="#">Headless commerce</a>
+                <a href="#">Campaigns and flash sales</a>
+                <a href="#">Retail and point of sale</a>
+                <a href="#">B2B ecommerce</a>
+            </div>
+        </div>
+        <div class="dropdown menu">
+            <a href="#">Manage</a>
+            <div class="dropdown-content">
+                <a href="#">Manage complexity</a>
+                <hr>
+                <a href="#">Automation</a>
+                <a href="#">Shipping</a>
+                <a href="#">Payments</a>
+            </div>
+        </div>
+        <div class="dropdown menu">
+            <a href="#">Integrate</a>
+            <div class="dropdown-content">
+                <a href="#">Integrate systems</a>
+                <hr>
+                <a href="#">Automation</a>
+                <a href="#">Headless commerce</a>
+                <a href="#">Partners</a>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#">Migrate</a>
+        </div>
+    </div>
+    <div class="right-menu">
+        <div class="dropdown menu">
+            <a href="#">Platform</a>
+            <div class="dropdown-content">
+                <a href="#">Shopify Plus platform</a>
+                <hr>
+                <a href="#">Customer stories</a>
+                <a href="#">Merchant success</a>
+                <a href="#">Pricing</a>
+                <a href="#">Upgrade to Shopify Plus</a>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="#">Blog</a>
+        </div>
+        <div class="menu">
+            <a href="#" class="greentext">Let's talk</a>
+        </div>
+    </div>
+</nav>
+<video id="wistia_simple_video_50" crossorigin="anonymous" poster="https://fast.wistia.com/assets/images/blank.gif" aria-label="Video" defaultplaybackrate="1" src="blob:https://www.shopify.com/628e4cce-d36d-47c6-a8ec-19ccb374b364" controlslist="nodownload" playsinline="" preload="auto" type="video/m3u8" x-webkit-airplay="allow" style="background: transparent; display: block; height: 100%; max-height: none; max-width: none; position: static; visibility: visible; width: 100%; object-fit: fill;"></video>
+<style>
+    * {
+        background-color: #15141b;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: Shopify-bold;
+        src: url('ShopifySans--bold.woff2');
+    }
+
+    nav {
+        width: 100%;
+        height: 80px;
+        line-height: 80px;
+    }
+    .logo {
+        width: 160px;
+        height: 80px;
+        background: url('logo.png') center/contain no-repeat;
+        float: left;
+    }
+    .left-menu {
+        display: flex;
+        justify-content: flex-start;
+        float: left;
+    }
+    .right-menu {
+        display: flex;
+        justify-content: flex-start;
+        float: right;
+    }
+    .left-menu a,
+    .right-menu a {
+        font-size: 15px;
+        font-family: Shopify-bold;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 20px;
+        margin: 0 5px;
+    }
+    .left-menu a:focus,
+    .right-menu a:focus {
+        outline: none;
+        transition: box-shadow 300ms;
+        box-shadow: 0 0 0 3px #1fb0ff;
+        border-radius: 15px;
+    }
+    .dropdown.menu > a::after {
+        font-weight: 900;
+        font-family: "Font Awesome 5 Free";
+        content : "\f107";
+        color: #ffF;
+        padding-left: 10px;
+    }
+    .dropdown.menu:hover .dropdown-content {
+        display: flex;
+    }
+    .dropdown-content:hover {
+        display: flex;
+    }
+    .dropdown-content {
+        position: absolute;
+        margin-top: -20px;
+        width: 240px;
+        background: #fff;
+        display: flex;
+        border-radius: 5px;
+        line-height: 30px;
+        flex-direction: column;
+        padding: 7px 0;
+        display: none;
+    }
+    .dropdown-content a {
+        color: #3d3f40;
+        background: transparent;
+        padding: 5px 15px;
+        margin: 0;
+    }
+    .dropdown-content a:hover {
+        color: #000000;
+        background: #dbdcdc;
+    }
+    .dropdown-content a:focus {
+        border-radius: 0;
+        color: #000000;
+        background: #dbdcdc;
+    }
+    .dropdown-content hr {
+        background-color: #3d3f40;
+        width: 80%;
+        height: 1px;
+        margin: 5px auto;
+        border:none;
+    }
+    .chat {
+        width: 56px;
+        height: 56px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: #fff url('chat.png') center/contain;
+        border-radius: 4px  
+    }
+    .greentext{
+        color: #d0f224 !important;
+    }
+</style>
+<div class="chat"></div>

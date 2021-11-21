@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .toggle {
+            visibility: hidden;
+        }
+        .redContainer {
+            width: 400px;
+            height: 400px;
+            border: 1px solid coral;
+            text-align: center;
+        }
+        input, label, button {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <button id="toggleButton">Soy Toggle ;)</button>
+    <br>
+    <br>
+    <div class="toggle" id="toggleText">Acá estoy!! </div>
+    <hr>
+    <input id="listInput" type="text" placeholder="Nueva Tarea">
+    <button id="listButton">Agregar</button>
+    <h4>Tareas: </h4>
+    <ul id="list">
+
+    </ul>
+    <hr>
+    <div class="redContainer">
+        <button id="button1">Botón 1</button>
+        <button id="button2">Botón 2</button>
+    </div>
+    <hr>
+    <div id="formContainer">
+        <button id="formCreate">Crear Formulario</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>

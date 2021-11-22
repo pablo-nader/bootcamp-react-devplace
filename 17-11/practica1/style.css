@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #aaa;
+    font-family: Bitter;
+}
+body {
+    background: rgb(222, 231, 238);
+}
+.card {
+    width: 350px;
+    height: 400px;
+    border-radius: 15px;
+    margin: 50px auto;
+    background: #eef3f7;
+    box-shadow: 0px 15px 35px -5px rgb(50 88 130 / 32%)
+}
+.card img {
+    width: 70%;
+    margin: 30px 0 15px 0;
+    position: relative;
+    left: -30px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 10px -8px #777;
+}
+.icons {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    padding: 20px 45px 30px 0;
+    font-size: 27px;
+}
+.icons > * {
+    padding: 12px 10px;
+}
+.card hr {
+    width: 90%;
+    height: 5px;
+    border-radius: 5px;
+    border: 0;
+    background: #ddd;
+    margin: auto;
+}
+.card-footer h5 {
+    padding: 0 0 10px 20px;
+    font-size: 16px;
+}
+.card-footer span {
+    display: block;
+    padding: 0 0 30px 20px;
+}
+.time {
+    font-weight: bold;
+}
+.start {
+    position: relative;
+    left: 18px;
+    font-size: 14px;
+}
+.end {
+    position: relative;
+    left: 290px;
+    top: -45px;
+}
+.play i {
+    color: #fff;
+    transform: scale(3) translateY(5px);
+    text-shadow: 0px 3px 3px #aaa;
+}
+.like i:hover,
+.play i:hover {
+    cursor: pointer;
+    text-shadow: 0px 2px 3px #555;
+}
+.red {
+    color:rgb(187, 0, 0) !important;
+}

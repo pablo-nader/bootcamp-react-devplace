@@ -7,8 +7,21 @@ export default function Card(props) {
         if (props.data !== null) {
             console.log("haciendo fetch a https://api.github.com/users/" + props.data)
             fetch("https://api.github.com/users/" + props.data)
-            .then(res => res.json())
-            .then(data => setData(data));
+            .then(res => {
+                if (res.ok) {
+                    return res.json();
+                } else {
+                    return null;
+                }
+            })
+            .then(data => {
+                if (data === null) {
+                    setData('error');
+                } else {
+                    setData(data);
+                }
+                
+            })
         }         
     }, [props.data]);
 
@@ -26,7 +39,22 @@ export default function Card(props) {
     //     "updated_at": "2021-11-09T20:20:24Z"
     // };
 
-    if (data !== null) {
+    if (data === null) {
+        return (
+            <div className="d-flex align-items-center text-white mt-5" style={{maxWidth: "400px", margin: "auto"}}>
+                <strong>Loading...</strong>
+                <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+            </div>
+        );
+    } else if (data === 'error') {
+        return (
+            <div className="mt-5" style={{maxWidth: "400px", margin: "auto"}}>
+                <div className="alert alert-danger text-center" role="alert">
+                    Not Found!
+                </div>
+            </div>
+        );
+    } else {
         let created_at = new Date(data.created_at).toLocaleDateString();
         let updated_at = new Date(data.updated_at).toLocaleDateString();
 
@@ -68,12 +96,7 @@ export default function Card(props) {
                 </div>
             </div>        
         );
-    } else {
-        return (
-            <div className="d-flex align-items-center text-white mt-5" style={{maxWidth: "400px", margin: "auto"}}>
-                <strong>Loading...</strong>
-                <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
-            </div>
-        );
     }
 }
+
+

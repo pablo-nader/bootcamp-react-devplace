@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    width: 850px;
+    margin: 50px auto;
+    height: 100%;
+    text-align: center;
+}
+.gallery-title h2,
+.gallery-title h5 {
+    margin: 15px 0;
+}
+.gallery {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 200px);
+
+}
+.gallery > * {
+    background: #ccc;
+    height: 250px;
+    padding-top: 20px;
+}
+.gallery > *:hover {
+    transform: scale(1.05);
+}
+.double {
+    grid-column: span 2;
+}
+.img {
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.more {
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+.more span {
+    display: block;
+    font-size: 30px;
+    margin: 40px 0;
+}
+.more a {
+    text-decoration: none;
+    background: darkgreen;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+/**********************************************************/
+
+#msg {
+    background: #eee;
+    font-size: 22px;
+    position: relative;
+    top: 54px;
+    left: 150px;
+    display: inline;
+    padding: 20px;
+    border-radius: 20px;
+    z-index: 2;
+}
+#msg > span {
+    position: absolute;
+    top: 50px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid #eee;
+    border-bottom: 50px solid transparent
+}
+.img-monito {
+    margin: auto;
+    width: 262px;
+    height: 211px;
+    background: url('./click-al-mono.jpg') center/cover no-repeat;
+    border-radius: 50%;
+}
+.img-monito:hover {
+    transform: scale(1.1);  
+    transition: .5s;
+    cursor: pointer;
+}
+.monito2 {
+    background: url('./click-al-mono2.jpg') center/cover no-repeat;
+}
